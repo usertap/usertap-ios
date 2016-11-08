@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UserTap.initWithLaunchOptions(launchOptions, appId: "abc", apiKey: "123")
+        UserTap.registerUser(userId: "user1", properties:["foo":"bar"])
+        UserTap.application(application, didRegisterForRemoteNotificationsWithDeviceToken: "endpoint-1234".data(using: .utf8)!)
+        UserTap.sendNotification(to: ["user:abc"], message: "This is a message from the app")
         return true
     }
 
@@ -42,5 +46,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        UserTap.application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print( "\(error)" )
+    }
 }
 

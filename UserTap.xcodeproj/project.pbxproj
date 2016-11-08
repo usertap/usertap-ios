@@ -14,6 +14,17 @@
 		02A448C11DCD4413003DC0A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A448BF1DCD4413003DC0A7 /* LaunchScreen.storyboard */; };
 		02A448CC1DCD4413003DC0A7 /* UserTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448CB1DCD4413003DC0A7 /* UserTapTests.swift */; };
 		02A448D71DCD4413003DC0A7 /* UserTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448D61DCD4413003DC0A7 /* UserTapUITests.swift */; };
+		02A448E61DCD5340003DC0A7 /* UserTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448E51DCD5340003DC0A7 /* UserTap.swift */; };
+		02A448E81DCE3EDD003DC0A7 /* NSData+DeviceToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448E71DCE3EDD003DC0A7 /* NSData+DeviceToken.swift */; };
+		02A448EA1DCE621E003DC0A7 /* UserTapRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448E91DCE621E003DC0A7 /* UserTapRequestQueue.swift */; };
+		02A448EC1DCE62F4003DC0A7 /* UserTapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448EB1DCE62F4003DC0A7 /* UserTapRequest.swift */; };
+		02CE29E41DD19EA700871CD0 /* UserTapRequestQueue+RegisterEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE29E31DD19EA700871CD0 /* UserTapRequestQueue+RegisterEndpoint.swift */; };
+		02CE29E61DD1A1C200871CD0 /* UserTapRegisterEndpointRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE29E51DD1A1C200871CD0 /* UserTapRegisterEndpointRequest.swift */; };
+		02CE29E81DD24D7000871CD0 /* UserTapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE29E71DD24D7000871CD0 /* UserTapError.swift */; };
+		02CE29EA1DD26F6F00871CD0 /* UserTapRegisterUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE29E91DD26F6F00871CD0 /* UserTapRegisterUserRequest.swift */; };
+		02CE29EC1DD2706B00871CD0 /* UserTapRequestQueue+RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE29EB1DD2706B00871CD0 /* UserTapRequestQueue+RegisterUser.swift */; };
+		02F889171DD276F400393F3F /* UserTapSendNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F889161DD276F400393F3F /* UserTapSendNotificationRequest.swift */; };
+		02F889191DD279C800393F3F /* UserTapRequestQueue+SendNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F889181DD279C800393F3F /* UserTapRequestQueue+SendNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +58,18 @@
 		02A448D21DCD4413003DC0A7 /* UserTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A448D61DCD4413003DC0A7 /* UserTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTapUITests.swift; sourceTree = "<group>"; };
 		02A448D81DCD4413003DC0A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A448E51DCD5340003DC0A7 /* UserTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTap.swift; sourceTree = "<group>"; };
+		02A448E71DCE3EDD003DC0A7 /* NSData+DeviceToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+DeviceToken.swift"; sourceTree = "<group>"; };
+		02A448E91DCE621E003DC0A7 /* UserTapRequestQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapRequestQueue.swift; sourceTree = "<group>"; };
+		02A448EB1DCE62F4003DC0A7 /* UserTapRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapRequest.swift; sourceTree = "<group>"; };
+		02A448ED1DD12E2D003DC0A7 /* UserTap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UserTap.entitlements; sourceTree = "<group>"; };
+		02CE29E31DD19EA700871CD0 /* UserTapRequestQueue+RegisterEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserTapRequestQueue+RegisterEndpoint.swift"; sourceTree = "<group>"; };
+		02CE29E51DD1A1C200871CD0 /* UserTapRegisterEndpointRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapRegisterEndpointRequest.swift; sourceTree = "<group>"; };
+		02CE29E71DD24D7000871CD0 /* UserTapError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapError.swift; sourceTree = "<group>"; };
+		02CE29E91DD26F6F00871CD0 /* UserTapRegisterUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapRegisterUserRequest.swift; sourceTree = "<group>"; };
+		02CE29EB1DD2706B00871CD0 /* UserTapRequestQueue+RegisterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserTapRequestQueue+RegisterUser.swift"; sourceTree = "<group>"; };
+		02F889161DD276F400393F3F /* UserTapSendNotificationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapSendNotificationRequest.swift; sourceTree = "<group>"; };
+		02F889181DD279C800393F3F /* UserTapRequestQueue+SendNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserTapRequestQueue+SendNotification.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +120,24 @@
 		02A448B51DCD4413003DC0A7 /* UserTap */ = {
 			isa = PBXGroup;
 			children = (
+				02A448ED1DD12E2D003DC0A7 /* UserTap.entitlements */,
 				02A448B61DCD4413003DC0A7 /* AppDelegate.swift */,
 				02A448B81DCD4413003DC0A7 /* ViewController.swift */,
 				02A448BA1DCD4413003DC0A7 /* Main.storyboard */,
 				02A448BD1DCD4413003DC0A7 /* Assets.xcassets */,
 				02A448BF1DCD4413003DC0A7 /* LaunchScreen.storyboard */,
 				02A448C21DCD4413003DC0A7 /* Info.plist */,
+				02A448E51DCD5340003DC0A7 /* UserTap.swift */,
+				02A448E71DCE3EDD003DC0A7 /* NSData+DeviceToken.swift */,
+				02A448E91DCE621E003DC0A7 /* UserTapRequestQueue.swift */,
+				02A448EB1DCE62F4003DC0A7 /* UserTapRequest.swift */,
+				02CE29E31DD19EA700871CD0 /* UserTapRequestQueue+RegisterEndpoint.swift */,
+				02CE29EB1DD2706B00871CD0 /* UserTapRequestQueue+RegisterUser.swift */,
+				02F889181DD279C800393F3F /* UserTapRequestQueue+SendNotification.swift */,
+				02CE29E51DD1A1C200871CD0 /* UserTapRegisterEndpointRequest.swift */,
+				02CE29E91DD26F6F00871CD0 /* UserTapRegisterUserRequest.swift */,
+				02CE29E71DD24D7000871CD0 /* UserTapError.swift */,
+				02F889161DD276F400393F3F /* UserTapSendNotificationRequest.swift */,
 			);
 			path = UserTap;
 			sourceTree = "<group>";
@@ -188,20 +223,29 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Tobin Schwaiger-Hastanan";
 				TargetAttributes = {
 					02A448B21DCD4413003DC0A7 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7LNU5FWV6W;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					02A448C61DCD4413003DC0A7 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 02A448B21DCD4413003DC0A7;
 					};
 					02A448D11DCD4413003DC0A7 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 02A448B21DCD4413003DC0A7;
 					};
@@ -259,7 +303,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CE29EA1DD26F6F00871CD0 /* UserTapRegisterUserRequest.swift in Sources */,
+				02F889191DD279C800393F3F /* UserTapRequestQueue+SendNotification.swift in Sources */,
 				02A448B91DCD4413003DC0A7 /* ViewController.swift in Sources */,
+				02A448E61DCD5340003DC0A7 /* UserTap.swift in Sources */,
+				02CE29E61DD1A1C200871CD0 /* UserTapRegisterEndpointRequest.swift in Sources */,
+				02A448E81DCE3EDD003DC0A7 /* NSData+DeviceToken.swift in Sources */,
+				02CE29E41DD19EA700871CD0 /* UserTapRequestQueue+RegisterEndpoint.swift in Sources */,
+				02A448EA1DCE621E003DC0A7 /* UserTapRequestQueue.swift in Sources */,
+				02CE29E81DD24D7000871CD0 /* UserTapError.swift in Sources */,
+				02A448EC1DCE62F4003DC0A7 /* UserTapRequest.swift in Sources */,
+				02F889171DD276F400393F3F /* UserTapSendNotificationRequest.swift in Sources */,
+				02CE29EC1DD2706B00871CD0 /* UserTapRequestQueue+RegisterUser.swift in Sources */,
 				02A448B71DCD4413003DC0A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +438,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -410,9 +467,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UserTap/UserTap.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7LNU5FWV6W;
 				INFOPLIST_FILE = UserTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.usertap.UserTap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usertap.Usertap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -422,9 +482,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UserTap/UserTap.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7LNU5FWV6W;
 				INFOPLIST_FILE = UserTap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.usertap.UserTap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.usertap.Usertap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -503,6 +566,7 @@
 				02A448DD1DCD4413003DC0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02A448DE1DCD4413003DC0A7 /* Build configuration list for PBXNativeTarget "UserTapTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +575,7 @@
 				02A448E01DCD4413003DC0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02A448E11DCD4413003DC0A7 /* Build configuration list for PBXNativeTarget "UserTapUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +584,7 @@
 				02A448E31DCD4413003DC0A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
