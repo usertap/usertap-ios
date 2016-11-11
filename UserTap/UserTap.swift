@@ -38,6 +38,7 @@ class UserTap {
     }
     
     static func registerUser(userId:String, properties:[String:String]? = nil) {
+
         if userId.characters.count == 0 {
             clearUser()
             return

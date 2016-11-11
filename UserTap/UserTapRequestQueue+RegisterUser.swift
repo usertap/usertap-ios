@@ -12,6 +12,5 @@ extension UserTapRequestQueue {
     func registerUser(userId:String, properties:[String:String]? = nil) {
         let request = UserTapRegisterUserRequest(userId: userId, properties: properties)
         self.enqueue(request: request)
-        self.process()
     }
 }

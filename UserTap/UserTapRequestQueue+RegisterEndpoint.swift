@@ -17,6 +17,5 @@ extension UserTapRequestQueue {
         #endif
         let request = UserTapRegisterEndpointRequest(deviceToken: deviceToken, type:type, userId:userId, properties:properties)
         self.enqueue(request: request)
-        self.process()
     }
 }

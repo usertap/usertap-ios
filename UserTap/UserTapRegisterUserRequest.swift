@@ -16,7 +16,7 @@ class UserTapRegisterUserRequest:UserTapRequest {
         self.properties = properties
     }
     
-    override func send(completionHandler: ((Any?, NSError?) -> Void)?) {
+    override func send(completionHandler: ((Any?, NSError?) -> Void)?) {        
         var data:[String:Any] = [
             "userId":self.userId
         ]

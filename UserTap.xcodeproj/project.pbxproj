@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0246F11C1DD5AB2000E28CD3 /* UserTapRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0246F11B1DD5AB2000E28CD3 /* UserTapRequestOperation.swift */; };
 		02A448B71DCD4413003DC0A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448B61DCD4413003DC0A7 /* AppDelegate.swift */; };
 		02A448B91DCD4413003DC0A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A448B81DCD4413003DC0A7 /* ViewController.swift */; };
 		02A448BC1DCD4413003DC0A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A448BA1DCD4413003DC0A7 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0246F11B1DD5AB2000E28CD3 /* UserTapRequestOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTapRequestOperation.swift; sourceTree = "<group>"; };
 		02A448B31DCD4413003DC0A7 /* UserTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A448B61DCD4413003DC0A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02A448B81DCD4413003DC0A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				02CE29E91DD26F6F00871CD0 /* UserTapRegisterUserRequest.swift */,
 				02CE29E71DD24D7000871CD0 /* UserTapError.swift */,
 				02F889161DD276F400393F3F /* UserTapSendNotificationRequest.swift */,
+				0246F11B1DD5AB2000E28CD3 /* UserTapRequestOperation.swift */,
 			);
 			path = UserTap;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				02A448E61DCD5340003DC0A7 /* UserTap.swift in Sources */,
 				02CE29E61DD1A1C200871CD0 /* UserTapRegisterEndpointRequest.swift in Sources */,
 				02A448E81DCE3EDD003DC0A7 /* NSData+DeviceToken.swift in Sources */,
+				0246F11C1DD5AB2000E28CD3 /* UserTapRequestOperation.swift in Sources */,
 				02CE29E41DD19EA700871CD0 /* UserTapRequestQueue+RegisterEndpoint.swift in Sources */,
 				02A448EA1DCE621E003DC0A7 /* UserTapRequestQueue.swift in Sources */,
 				02CE29E81DD24D7000871CD0 /* UserTapError.swift in Sources */,

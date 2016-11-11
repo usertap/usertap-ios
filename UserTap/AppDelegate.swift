@@ -16,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print( "(1)) ")
         UserTap.initWithLaunchOptions(launchOptions, appId: "abc", apiKey: "123")
+        print( "(2)) ")
         UserTap.registerUser(userId: "user1", properties:["foo":"bar"])
+        print( "(3)) ")
+        UserTap.sendNotification(to: ["user:user1"], message: "This is a message from the app")
+        print( "(4)) ")
         return true
     }
 
