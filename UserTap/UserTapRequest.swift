@@ -11,7 +11,7 @@ import Foundation
 class UserTapRequest {
     static let kUserTapBaseUrl = "usertap_base_url"
     
-    static let BASE_URL = "http://localhost:8080/api/1.0"
+    static let BASE_URL = "https://api.usertap.com/api/1.0"
     
     lazy var baseUrl:String = {
         if let dict = Bundle.main.infoDictionary, let baseUrl = dict[UserTapRequest.kUserTapBaseUrl] as? String {
@@ -29,6 +29,7 @@ class UserTapRequest {
     }
     
     func post(action:String, json:AnyObject, completionHandler:((Any?, NSError?) -> Void)?) {
+        print("\(type(of:self)) - post ENTER")
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let url = URL(string: "\(self.baseUrl)/\(action)")
         
@@ -81,7 +82,7 @@ class UserTapRequest {
                     do {
                         responseObject = try JSONSerialization.jsonObject(with: data, options: [])
                     } catch  {
-                        print( "[UserTap Warning] unable to parse JSON response.")
+                        print( "[UserTap Warning] unable to parse JSON response.\n\(NSString(data: data, encoding: String.Encoding.utf8.rawValue))")
                     }
                 }
                 
@@ -103,5 +104,6 @@ class UserTapRequest {
             
             task.resume()
         }
+        print("\(type(of:self)) - post EXIT")
     }
 }

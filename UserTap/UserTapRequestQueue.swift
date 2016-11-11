@@ -16,6 +16,7 @@ class UserTapRequestQueue {
     }
     
     private var queue:[UserTapRequest] = []
+    private var current:UserTapRequest? = nil
     
     func enqueue(request:UserTapRequest) {
         let lockQueue = DispatchQueue(label: "com.usertap.RequestQueue")
@@ -58,7 +59,6 @@ class UserTapRequestQueue {
     func process() {
         if let request = self.dequeue() {
             request.send(completionHandler: { [unowned self] (response, error) in
-                
             })
         }
     }

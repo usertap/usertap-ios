@@ -18,6 +18,7 @@ class UserTap {
     
     var appId:String? = nil
     var apiKey:String? = nil
+    var deviceToken:Data? = nil
     
     static func initWithLaunchOptions(_ launchOptions:[UIApplicationLaunchOptionsKey: Any]?, appId:String, apiKey:String) {
         UserTap.sharedInstance.initWithLaunchOptions(launchOptions, appId: appId, apiKey: apiKey)
@@ -45,8 +46,12 @@ class UserTap {
         let defaults = UserDefaults.standard
         defaults.set(userId, forKey: DefaultsKey.UserId.rawValue)
         defaults.synchronize()
-        
-        UserTapRequestQueue.getSharedRequestQueue().registerUser(userId: userId, properties:properties)
+
+        if let deviceToken = self.sharedInstance.deviceToken {
+            UserTapRequestQueue.getSharedRequestQueue().registerEndpoint(deviceToken: deviceToken.hexString(), userId:UserTap.getUserId(), properties:properties)
+        } else {
+            UserTapRequestQueue.getSharedRequestQueue().registerUser(userId: userId, properties:properties)
+        }
     }
     
     static func clearUser() {
@@ -65,11 +70,12 @@ class UserTap {
         return nil
     }
     
-    static func sendNotification(to:[String], message:String) {
-        UserTapRequestQueue.getSharedRequestQueue().sendNotification(to: to, message: message)
+    static func sendNotification(to:[String], message:String, properties:[String:String]? = nil) {
+        UserTapRequestQueue.getSharedRequestQueue().sendNotification(to: to, message: message, properties:properties)
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        self.deviceToken = deviceToken
         UserTapRequestQueue.getSharedRequestQueue().registerEndpoint(deviceToken: deviceToken.hexString(), userId:UserTap.getUserId())
     }
     

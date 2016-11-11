@@ -9,8 +9,8 @@
 import Foundation
 
 extension UserTapRequestQueue {
-    func sendNotification(to:[String], message:String) {
-        let request = UserTapSendNotificationRequest(to: to, message:message)
+    func sendNotification(to:[String], message:String, properties:[String:String]? = nil) {
+        let request = UserTapSendNotificationRequest(to: to, message:message, properties:properties)
         self.enqueue(request: request)
         self.process()
     }

@@ -9,13 +9,13 @@
 import Foundation
 
 extension UserTapRequestQueue {
-    func registerEndpoint(deviceToken:String, userId:String? = nil) {
+    func registerEndpoint(deviceToken:String, userId:String? = nil, properties:[String:String]? = nil) {
         #if DEBUG
             let type = "ios_dev"
         #else
             let type = "ios"
         #endif
-        let request = UserTapRegisterEndpointRequest(deviceToken: deviceToken, type:type, userId:userId)
+        let request = UserTapRegisterEndpointRequest(deviceToken: deviceToken, type:type, userId:userId, properties:properties)
         self.enqueue(request: request)
         self.process()
     }

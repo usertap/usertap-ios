@@ -18,8 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UserTap.initWithLaunchOptions(launchOptions, appId: "abc", apiKey: "123")
         UserTap.registerUser(userId: "user1", properties:["foo":"bar"])
-        UserTap.application(application, didRegisterForRemoteNotificationsWithDeviceToken: "endpoint-1234".data(using: .utf8)!)
-        UserTap.sendNotification(to: ["user:abc"], message: "This is a message from the app")
         return true
     }
 
