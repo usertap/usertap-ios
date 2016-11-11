@@ -27,7 +27,6 @@ class UserTapRequestOperation:Operation {
     }
     
     override func main() {
-        print( "is main thread: \(Thread.isMainThread)")
         self.request.send { (_, _) in
             self.isFinished = true
         }
